@@ -1,0 +1,64 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    padding: 50px 30px;
+    background-color: #f2f2f2;
+    min-height: calc(100vh - 80px);
+}
+
+.beerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 30px 30px 50px;
+}
+
+.noResult,
+.loading {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(13, 17, 54);
+    margin: 40px 15px;
+}
+
+.error {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(13, 17, 54);
+    margin: 40px 15px 0;
+}
+
+.errorDesc {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(119, 121, 140);
+    margin: 0 15px 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .beerContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .beerContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #main {
+        padding: 80px 30px;
+    }
+}

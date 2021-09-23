@@ -1,0 +1,81 @@
+#mainSearch {
+  -webkit-animation: 0.3s ease 0s 1 normal none running;
+          animation: 0.3s ease 0s 1 normal none running;
+}
+
+.beerSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #77798c;
+  background-color: white;
+  border-width: 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 0px 21px 36px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 21px 36px;
+}
+
+.beerInput {
+  border: none;
+  height: 45px;
+  font-size: 15px;
+  padding: 0 10px;
+  width: 400px;
+  color: #77798c;
+  background-color: inherit;
+}
+
+#beerSearchBtn {
+  background-color: #009e7f;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0px none;
+  padding: 0 25px;
+  cursor: pointer;
+}
+
+#beerSearchBtn span {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .beerInput {
+    width: 80%;
+  }
+  #beerSearchBtn span {
+    display: none;
+  }
+  #mainSearch {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+  #beerSearchBtn {
+    padding: 0;
+    width: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=Search.css.map */

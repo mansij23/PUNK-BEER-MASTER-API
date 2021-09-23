@@ -1,0 +1,82 @@
+.beerCardOuter {
+    display: flex;
+    width: 350px;
+    height: 220px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #e7e7e7;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #b7b7b7;
+    }
+}
+
+.beerCardIneer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1em;
+
+    label {
+        width: max-content;
+        align-self: flex-end;
+        cursor: pointer;
+
+        input[type="checkbox"] {
+            display: none;
+        }
+        i {
+            color: #009e7f;
+        }
+    }
+}
+
+.beerDataContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.beerImgArea {
+    height: 90%;
+    width: 20%;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.beerData {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+
+    .beerName {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,67 @@
+#mainSearch {
+    animation: 0.3s ease 0s 1 normal none running;
+}
+
+.beerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: max-content;
+    color: rgb(119, 121, 140);
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 21px 36px;
+}
+
+.beerInput {
+    border: none;
+    height: 45px;
+    font-size: 15px;
+    padding: 0 10px;
+    width: 400px;
+    color: rgb(119, 121, 140);
+    background-color: inherit;
+}
+
+#beerSearchBtn {
+    background-color: #009e7f;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    height: 45px;
+    align-items: center;
+    border: 0px none;
+    padding: 0 25px;
+    cursor: pointer;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .beerInput {
+        width: 80%;
+    }
+
+    #beerSearchBtn {
+        span {
+            display: none;
+        }
+    }
+
+    #mainSearch {
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #beerSearchBtn {
+        padding: 0;
+        width: 20%;
+        justify-content: center;
+        text-align: center;
+    }
+}
